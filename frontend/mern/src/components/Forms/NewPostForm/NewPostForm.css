@@ -1,0 +1,48 @@
+.post-form__inputs{
+    display: grid;
+    grid-template-columns:0.5fr, 3fr ;
+    margin-bottom: 1em;
+   
+}
+.post-form__inputs label{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+.post-form__inputs input{
+    height: 2em;
+    border: 2px solid var(--FOREGROUND-COLOR);
+    border-radius: 5px;
+    font-size: 14pt;
+    font-weight: 600;
+    
+}
+.post-form__inputs input, textarea, select{
+    padding: 0.5em;
+}
+.post-form__inputs textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.post-form__header{
+    display: flex;
+    justify-content: space-between;
+}
+.post-form__header button{
+    background-color: transparent;
+    color: var(--FOREGROUND-COLOR);
+    transition: 1s;
+    border: 2px solid var(--FOREGROUND-COLOR);
+    width: 64px;
+    height: 64px;
+    font-size: 18pt;
+    place-content: center;
+    padding: 5px;
+    border-radius: 15px;
+}
+.post-form__header button:hover{
+    color: var(--BACKGROUND-COLOR);
+    background-color: var(--FOREGROUND-COLOR);
+    border-color: var(--BACKGROUND-COLOR);
+    cursor: pointer;
+}

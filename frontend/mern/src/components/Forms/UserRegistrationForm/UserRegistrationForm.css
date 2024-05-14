@@ -1,0 +1,46 @@
+ 
+.user-form__header{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.user-form__header button{
+    background-color: transparent;
+    transition: 1s;
+    border: 2px solid var(--FOREGROUND-COLOR);
+    width: 64px;
+    height: 64px;
+    font-size: 18pt;
+    place-content: center;
+    padding: 5px;
+    border-radius: 15px;
+    color: var(--FOREGROUND-COLOR);
+}
+.user-form fieldset{
+    padding: 1em;
+}
+.user-form__header button:hover{
+    color: var(--BACKGROUND-COLOR);
+    background-color: var(--FOREGROUND-COLOR);
+    border-color: var(--BACKGROUND-COLOR);
+    cursor: pointer;
+}
+.user-form__inputs{
+    display: grid;
+    grid-template-columns:0.5fr, 3fr ;
+    margin-bottom: 1em;
+}
+.user-form label{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+.user-form__inputs input[type="text"], [type="password"]{
+    height: 3rem;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13pt;
+}
+.user-form__inputs input[type="checkbox"]{
+    height: 1.5em;
+}

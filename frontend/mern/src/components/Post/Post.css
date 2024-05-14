@@ -1,0 +1,77 @@
+.post{
+    border-radius: 10px;
+    box-shadow:2px 2px 2px #7055034d,-5px -5px 5px #4949054d;
+    margin: 1em 0.5em 1em 0.5em;
+    padding: 1em;
+}
+.post__header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+.post__title{
+    font-weight: 800;
+    overflow-wrap: break-word;
+    padding-bottom: 0.5em;
+}
+.post__content-container{
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+ }
+.post__content{
+    --max-lines:4;
+   --line-height:1.4;
+   line-height: var(--line-height);
+   max-height: calc(var(--max-lines) * 1em * var(--line-height));
+   overflow: hidden;
+   position: relative;
+  
+   
+}
+.post__content:has(+ .expand-btn:not(:checked)):before{
+   background:linear-gradient(to bottom, transparent, black) ;
+   border-width: 0;
+   border: none;
+   bottom: 0;
+   content: "";
+   height: calc(1em * var(--line-height));
+   pointer-events: none;
+   position: absolute ;
+   width: 100%;
+}
+.expand-btn{
+   appearance: none;
+   border-radius: .25em;
+   border: 2px solid var(--FOREGROUND-COLOR);
+   cursor: pointer;
+   margin-top: 1rem;
+   padding: .5em;
+   transition: 500ms;
+   
+}
+.expand-btn:hover{
+   background-color: var(--FOREGROUND-COLOR);
+   color: var(--BACKGROUND-COLOR);
+   
+}
+.expand-btn::before{
+   content: "Show more";
+   color: var(--FOREGROUND-COLOR);
+}
+.expand-btn:checked::before{
+   content: "Show less";
+}
+.post__content:has(+ .expand-btn:checked){
+   max-height: none;
+}
+.post__footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 1em;
+    width: 32%;
+}
+ 
+

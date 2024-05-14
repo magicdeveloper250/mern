@@ -1,0 +1,32 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+.hero__title{
+    font-size: 2.5rem;
+}
+.hero__content{
+    font-size: 1.5rem;
+}
+.hero__links{
+    display: flex;
+    gap: 1em;
+}
+.hero__link{
+    text-decoration: none;
+    color:var(--FOREGROUND-COLOR);
+    border-radius: 10px;
+    place-content: center;
+    width: 64px;
+    height: 32px;
+
+}
+.hero__link-primary{
+    border: 3px solid dodgerblue;
+  
+}

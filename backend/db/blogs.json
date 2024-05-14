@@ -1,0 +1,82 @@
+[{
+  "_id": {
+    "$oid": "66351fbb737ff51d225894e4"
+  },
+  "created": "Monday",
+  "title": "The Rust Programming Language",
+  "content": "Rust is popular fast and powerful programming language",
+  "genre": "Programming",
+  "author": "rafiki"
+},
+{
+  "_id": {
+    "$oid": "6635219e737ff51d225894e6"
+  },
+  "created": "Tuesday",
+  "title": "The best way to use youtube to learn to code",
+  "content": "There many content creators on youtube who teaches coding related courses, but some of them provide fake courses",
+  "genre": "coding",
+  "author": "rafiki"
+},
+{
+  "_id": {
+    "$oid": "6635219e737ff51d225894e7"
+  },
+  "created": "Wensday",
+  "title": "The javaScript",
+  "content": "The javaScript programming course for beginner",
+  "genre": "programming",
+  "author": "rafiki"
+},
+{
+  "_id": {
+    "$oid": "6635219e737ff51d225894e8"
+  },
+  "created": "Thursday",
+  "title": "The Cascading style sheet (CSS)",
+  "content": "Css is the styling language which is used for styling web pages to give them good look",
+  "genre": "programming",
+  "author": "rafiki"
+},
+{
+  "_id": {
+    "$oid": "663522fcd69d79950d46b79c"
+  },
+  "created": {
+    "$date": "2024-05-03T17:46:36.972Z"
+  },
+  "title": "the python programming language",
+  "content": "on of the most popular programming language",
+  "genre": "programming",
+  "author": "rafiki"
+},
+{
+  "_id": {
+    "$oid": "6635246dd69d79950d46b79d"
+  },
+  "created": {
+    "$date": "2024-05-03T17:52:45.541Z"
+  },
+  "title": "the python programming language",
+  "content": "on of the most popular programming language",
+  "genre": "programming",
+  "platforms": [
+    "youtube",
+    "facebook",
+    "spotify",
+    "Discord"
+  ],
+  "hours": 78,
+  "rating": 4.1,
+  "channels": [
+    {
+      "name": "Coding is perfect",
+      "owner": "Eric"
+    },
+    {
+      "name": "JimShapedCoding",
+      "owner": "jim"
+    }
+  ],
+  "author": "rafiki"
+}]

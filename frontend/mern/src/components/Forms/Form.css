@@ -1,0 +1,17 @@
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form__inputs{
+    display: flex;
+    gap: 1em;
+    justify-content: end;
+    margin-bottom: 1em;
+    height: 2rem;
+}
+.form__inputs-inline{
+    display: inline;
+}
+.form__inputs input{
+    border-radius: 5px;
+}

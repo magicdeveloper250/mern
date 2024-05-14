@@ -1,0 +1,24 @@
+ 
+.posts__title{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 100;
+
+}
+.posts__header{
+    display: flex;
+    justify-content: space-between;
+}
+.posts__header__button{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--FOREGROUND-COLOR);
+    cursor: pointer;
+    height: 32px;
+    width: 64px;
+    transition: 0.3s;
+}
+.posts__header__button:hover{
+background-color: var(--FOREGROUND-COLOR);
+color: var(--BACKGROUND-COLOR);
+}

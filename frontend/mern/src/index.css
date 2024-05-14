@@ -1,0 +1,69 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+:root{
+  --BACKGROUND-COLOR:#000;
+  --FOREGROUND-COLOR:whitesmoke;
+  --PRIMARY-BUTTON-COLOR: rgb(1, 14, 67);
+
+}
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px 1em 0px 1em;
+}
+
+body{
+  background-color: var(--BACKGROUND-COLOR);
+  color: var(--FOREGROUND-COLOR);
+  min-height: 100vh;
+
+}
+.button{
+  cursor: pointer;
+  font-size: 1em;
+  height: 32px;
+  transition: 0.3s;
+  width: 100%;
+}
+.button-primary{
+  background-color:var(--PRIMARY-BUTTON-COLOR);
+  border-radius: 5px;
+  border: 2px solid var(--FOREGROUND-COLOR);
+  color: var(--FOREGROUND-COLOR);
+}
+.button-secondary{
+  background-color: transparent;
+  border-radius: 5px;
+  border:2px solid var(--FOREGROUND-COLOR);
+  color: var(--FOREGROUND-COLOR);
+  padding: 5px;
+  transition: 0.3s;
+  margin-right: 2px;
+}
+.button-secondary:hover{
+  background-color: var(--FOREGROUND-COLOR);
+  color: var(--BACKGROUND-COLOR);
+  border-color: var(--BACKGROUND-COLOR);
+}
+.button-primary:hover{
+  background-color: var(--FOREGROUND-COLOR);
+  border-color: var(--PRIMARY-BUTTON-COLOR);
+  color:var(--PRIMARY-BUTTON-COLOR);
+}
+.container-center{
+  align-items: center;
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.hero__title{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: var(--FOREGROUND-COLOR);
+}
